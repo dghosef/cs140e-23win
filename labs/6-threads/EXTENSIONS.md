@@ -21,3 +21,5 @@ in the class:
   time = short.  Next year!)
 
    - See how many PWM threads you can run in `4-yield-test`.
+
+   - Make fake pre-emptive threads. You can emulate pre-emptive threads using our threads by yielding every time you enter or exit a function. If you implement `__cyg_profile_func_enter` and `__cyg_profile_func_exit`, those functions will run on the entry/exit of each function call every single time. 
